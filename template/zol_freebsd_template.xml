@@ -1,0 +1,1637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.4</version>
+    <date>2021-06-12T23:08:55Z</date>
+    <groups>
+        <group>
+            <uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <uuid>47d3c2ff933947368d4bee4b1184d69b</uuid>
+            <template>ZFS on FreeBSD</template>
+            <name>ZFS on FreeBSD</name>
+            <description>OpenZFS (formerly ZFS on Linux) template for FreeBSD
+
+Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <uuid>6b5fc935fe194d30badea64eaf3f317f</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[arc_dnode_limit]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>0b7d673688e3429d92aa349762729f83</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[arc_meta_limit]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>b0b5004458494182bf874545f8eb4e41</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[arc_meta_used]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <description>arc_meta_used = hdr_size + metadata_size + dbuf_size + dnode_size + bonus_size</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>795ab079ba13461c872ee1d5c0295704</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[bonus_size]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>34a1fb79b2b64ce08ec5b377211372d7</uuid>
+                    <name>ZFS ARC max size</name>
+                    <key>zfs.arcstats[c_max]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>d60b8e4f7a3d4bea972e7fe04c3bb5ca</uuid>
+                    <name>ZFS ARC minimum size</name>
+                    <key>zfs.arcstats[c_min]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>5e12dd98f1644f5a87cc5ded5d2e55d8</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[data_size]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>522a0f33c90047bab4f55b7214f51dea</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[dbuf_size]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>a3d10ebb57984a829f780a229fc9617c</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[dnode_size]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>184eef57aa034cf8acaf6a8f0e02395b</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[hdr_size]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>cb7bcc02dfc14329a361e194145871c0</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[hits]</key>
+                    <history>30d</history>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <parameters>
+                                <parameter/>
+                            </parameters>
+                        </step>
+                    </preprocessing>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>8df273b6e0904c9ab140f8f13f6ca973</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[metadata_size]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>dcd96743ed984018bff5d16105693606</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[mfu_hits]</key>
+                    <history>30d</history>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <parameters>
+                                <parameter/>
+                            </parameters>
+                        </step>
+                    </preprocessing>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>1015ebe8ef6f4626ae7967bf6358f1b3</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[mfu_size]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>1298a265a6784e63a166b768e1faf67e</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[misses]</key>
+                    <history>30d</history>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <parameters>
+                                <parameter/>
+                            </parameters>
+                        </step>
+                    </preprocessing>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>c85d0e9e1b464748a20148e2f2507609</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[mru_hits]</key>
+                    <history>30d</history>
+                    <preprocessing>
+                        <step>
+                            <type>CHANGE_PER_SECOND</type>
+                            <parameters>
+                                <parameter/>
+                            </parameters>
+                        </step>
+                    </preprocessing>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>50954c7b43d745d09990011df4d7448c</uuid>
+                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <key>zfs.arcstats[mru_size]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>cd225da5a02346a58dbe0c9808a628eb</uuid>
+                    <name>ZFS ARC current size</name>
+                    <key>zfs.arcstats[size]</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>8c8129f814fe47ae9c71e636599acd90</uuid>
+                    <name>ZFS ARC Cache Hit Ratio</name>
+                    <type>CALCULATED</type>
+                    <key>zfs.arcstats_hit_ratio</key>
+                    <history>30d</history>
+                    <value_type>FLOAT</value_type>
+                    <units>%</units>
+                    <params>100*(last(//zfs.arcstats[hits])/(last(//zfs.arcstats[hits])+count(//zfs.arcstats[hits],#1,,&quot;0&quot;)+last(//zfs.arcstats[misses])))</params>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>e644390a9c9743f2844dbc9ef8806a8f</uuid>
+                    <name>ZFS ARC total read</name>
+                    <type>CALCULATED</type>
+                    <key>zfs.arcstats_total_read</key>
+                    <history>30d</history>
+                    <units>B</units>
+                    <params>last(//zfs.arcstats[hits])+last(//zfs.arcstats[misses])</params>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>ebfb742fb123451c9632d12bde0957c4</uuid>
+                    <name>ZFS parameter $1</name>
+                    <key>zfs.get.param[dnode_limit_percent]</key>
+                    <delay>1h</delay>
+                    <history>30d</history>
+                    <units>%</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>18d8b817852848929f4e0b421cb21532</uuid>
+                    <name>ZFS parameter $1</name>
+                    <key>zfs.get.param[meta_limit_percent]</key>
+                    <delay>1h</delay>
+                    <history>30d</history>
+                    <units>%</units>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS ARC</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>4ecabdcb2104460f83c2ad5f18fd98f9</uuid>
+                    <name>OpenZFS version</name>
+                    <key>zfs.version</key>
+                    <delay>1h</delay>
+                    <history>30d</history>
+                    <trends>0</trends>
+                    <value_type>TEXT</value_type>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>ZFS</value>
+                        </tag>
+                    </tags>
+                    <triggers>
+                        <trigger>
+                            <uuid>041efc8ff1ac40ed99953a8929ed3ff3</uuid>
+                            <expression>(last(/ZFS on FreeBSD/zfs.version,#1)&lt;&gt;last(/ZFS on FreeBSD/zfs.version,#2))&gt;0</expression>
+                            <name>Version of OpenZFS is now {ITEM.VALUE} on {HOST.NAME}</name>
+                            <priority>INFO</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+            </items>
+            <discovery_rules>
+                <discovery_rule>
+                    <uuid>a82a1b7067904fecb06bcf5b88457192</uuid>
+                    <name>Zfs Dataset discovery</name>
+                    <key>zfs.fileset.discovery</key>
+                    <delay>30m</delay>
+                    <filter>
+                        <evaltype>AND</evaltype>
+                    </filter>
+                    <lifetime>2d</lifetime>
+                    <description>Discover ZFS dataset.</description>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>4d7c96bd10b44754b2c8790b90c12046</uuid>
+                            <name>Zfs dataset $1 compressratio</name>
+                            <key>zfs.get.compressratio[{#FILESETNAME}]</key>
+                            <delay>30m</delay>
+                            <history>30d</history>
+                            <value_type>FLOAT</value_type>
+                            <units>%</units>
+                            <preprocessing>
+                                <step>
+                                    <type>MULTIPLIER</type>
+                                    <parameters>
+                                        <parameter>100</parameter>
+                                    </parameters>
+                                </step>
+                            </preprocessing>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS dataset</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>e9df401ae71e45c8a3fdbbd146cdd57b</uuid>
+                            <name>Zfs dataset $1 $2</name>
+                            <key>zfs.get.fsinfo[{#FILESETNAME},available]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <units>B</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS dataset</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>ed63bb6942364281bcea80c54b6f8fcc</uuid>
+                            <name>Zfs dataset $1 $2</name>
+                            <key>zfs.get.fsinfo[{#FILESETNAME},referenced]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <units>B</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS dataset</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>7ef4530ddf464defb2a64ce674a82c8c</uuid>
+                            <name>Zfs dataset $1 $2</name>
+                            <key>zfs.get.fsinfo[{#FILESETNAME},usedbychildren]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <units>B</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS dataset</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>3c7f982147be49629c78aa67a1d8d56e</uuid>
+                            <name>Zfs dataset $1 $2</name>
+                            <key>zfs.get.fsinfo[{#FILESETNAME},usedbydataset]</key>
+                            <delay>1h</delay>
+                            <history>30d</history>
+                            <units>B</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS dataset</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>cc0e02c58b28443eb78eeacc81095966</uuid>
+                            <name>Zfs dataset $1 $2</name>
+                            <key>zfs.get.fsinfo[{#FILESETNAME},usedbysnapshots]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <units>B</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS dataset</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>a54feffafdb34ba08f1474ab4710088d</uuid>
+                            <name>Zfs dataset $1 $2</name>
+                            <key>zfs.get.fsinfo[{#FILESETNAME},used]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <units>B</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS dataset</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <uuid>cc0b0756d2fe42779b62adf63e38681d</uuid>
+                            <expression>( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},available]) + last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) ) ) &gt; ({$ZFS_AVERAGE_ALERT}/100)</expression>
+                            <name>More than {$ZFS_AVERAGE_ALERT}% used on dataset {#FILESETNAME} on {HOST.NAME}</name>
+                            <priority>AVERAGE</priority>
+                            <dependencies>
+                                <dependency>
+                                    <name>More than {$ZFS_HIGH_ALERT}% used on dataset {#FILESETNAME} on {HOST.NAME}</name>
+                                    <expression>( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},available]) + last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) ) ) &gt; ({$ZFS_HIGH_ALERT}/100)</expression>
+                                </dependency>
+                            </dependencies>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <uuid>8bfb157ac42845c0b340e28ae510833c</uuid>
+                            <expression>( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},available]) + last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) ) ) &gt; ({$ZFS_DISASTER_ALERT}/100)</expression>
+                            <name>More than {$ZFS_DISASTER_ALERT}% used on dataset {#FILESETNAME} on {HOST.NAME}</name>
+                            <priority>DISASTER</priority>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <uuid>9b592a2cba084bec9ceb4f82367e758b</uuid>
+                            <expression>( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},available]) + last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) ) ) &gt; ({$ZFS_HIGH_ALERT}/100)</expression>
+                            <name>More than {$ZFS_HIGH_ALERT}% used on dataset {#FILESETNAME} on {HOST.NAME}</name>
+                            <priority>HIGH</priority>
+                            <dependencies>
+                                <dependency>
+                                    <name>More than {$ZFS_DISASTER_ALERT}% used on dataset {#FILESETNAME} on {HOST.NAME}</name>
+                                    <expression>( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},available]) + last(/ZFS on FreeBSD/zfs.get.fsinfo[{#FILESETNAME},used]) ) ) &gt; ({$ZFS_DISASTER_ALERT}/100)</expression>
+                                </dependency>
+                            </dependencies>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes>
+                        <graph_prototype>
+                            <uuid>5213684719404718b8956d6faf0e6b71</uuid>
+                            <name>ZFS dataset {#FILESETNAME} usage</name>
+                            <type>STACKED</type>
+                            <ymin_type_1>FIXED</ymin_type_1>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <color>3333FF</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.get.fsinfo[{#FILESETNAME},usedbydataset]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>2</sortorder>
+                                    <color>FF33FF</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.get.fsinfo[{#FILESETNAME},usedbysnapshots]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>3</sortorder>
+                                    <color>FF3333</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.get.fsinfo[{#FILESETNAME},usedbychildren]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>4</sortorder>
+                                    <color>33FF33</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.get.fsinfo[{#FILESETNAME},available]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                    </graph_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>08039e570bd7417294d043f4f7bf960f</uuid>
+                    <name>Zfs Pool discovery</name>
+                    <key>zfs.pool.discovery</key>
+                    <lifetime>3d</lifetime>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>9f889e9529934fdfbf47a29de32468f0</uuid>
+                            <name>Zpool {#POOLNAME} available</name>
+                            <key>zfs.get.poolinfo[{#POOLNAME},available]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <units>B</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS zpool</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>1993c04b00bc428bbdf43c909967afd2</uuid>
+                            <name>Zpool {#POOLNAME} used</name>
+                            <key>zfs.get.poolinfo[{#POOLNAME},used]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <units>B</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS zpool</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>472e21c79759476984cbf4ce9f12580a</uuid>
+                            <name>Zpool {#POOLNAME} Health</name>
+                            <key>zfs.zpool.health[{#POOLNAME}]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <trends>0</trends>
+                            <value_type>TEXT</value_type>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS zpool</value>
+                                </tag>
+                            </tags>
+                            <trigger_prototypes>
+                                <trigger_prototype>
+                                    <uuid>4855fe0ed61b444daad73aa6090b46af</uuid>
+                                    <expression>find(/ZFS on FreeBSD/zfs.zpool.health[{#POOLNAME}],,&quot;like&quot;,&quot;ONLINE&quot;)=0</expression>
+                                    <name>Zpool {#POOLNAME} is {ITEM.VALUE} on {HOST.NAME}</name>
+                                    <priority>HIGH</priority>
+                                </trigger_prototype>
+                            </trigger_prototypes>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>3207e6ffd0fa40c4a1d6e607e4e12375</uuid>
+                            <name>Zpool {#POOLNAME} read throughput</name>
+                            <type>DEPENDENT</type>
+                            <key>zfs.zpool.iostat.nread[{#POOLNAME}]</key>
+                            <delay>0</delay>
+                            <history>30d</history>
+                            <value_type>FLOAT</value_type>
+                            <units>Bps</units>
+                            <preprocessing>
+                                <step>
+                                    <type>JSONPATH</type>
+                                    <parameters>
+                                        <parameter>$[0]</parameter>
+                                    </parameters>
+                                </step>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <parameters>
+                                        <parameter/>
+                                    </parameters>
+                                </step>
+                            </preprocessing>
+                            <master_item>
+                                <key>zfs.zpool.iostat[{#POOLNAME}]</key>
+                            </master_item>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS zpool</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>78b418605f9b45b29bbd33b93a6b2e82</uuid>
+                            <name>Zpool {#POOLNAME} write throughput</name>
+                            <type>DEPENDENT</type>
+                            <key>zfs.zpool.iostat.nwritten[{#POOLNAME}]</key>
+                            <delay>0</delay>
+                            <history>30d</history>
+                            <value_type>FLOAT</value_type>
+                            <units>Bps</units>
+                            <preprocessing>
+                                <step>
+                                    <type>JSONPATH</type>
+                                    <parameters>
+                                        <parameter>$[1]</parameter>
+                                    </parameters>
+                                </step>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <parameters>
+                                        <parameter/>
+                                    </parameters>
+                                </step>
+                            </preprocessing>
+                            <master_item>
+                                <key>zfs.zpool.iostat[{#POOLNAME}]</key>
+                            </master_item>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS zpool</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>6b35bf06bf4542318a7999ac4d7952f7</uuid>
+                            <name>Zpool {#POOLNAME} IOPS: reads</name>
+                            <type>DEPENDENT</type>
+                            <key>zfs.zpool.iostat.reads[{#POOLNAME}]</key>
+                            <delay>0</delay>
+                            <history>30d</history>
+                            <value_type>FLOAT</value_type>
+                            <units>iops</units>
+                            <preprocessing>
+                                <step>
+                                    <type>JSONPATH</type>
+                                    <parameters>
+                                        <parameter>$[2]</parameter>
+                                    </parameters>
+                                </step>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <parameters>
+                                        <parameter/>
+                                    </parameters>
+                                </step>
+                            </preprocessing>
+                            <master_item>
+                                <key>zfs.zpool.iostat[{#POOLNAME}]</key>
+                            </master_item>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS zpool</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>b99d5ab922324536bc2e013ac1fca306</uuid>
+                            <name>Zpool {#POOLNAME} IOPS: writes</name>
+                            <type>DEPENDENT</type>
+                            <key>zfs.zpool.iostat.writes[{#POOLNAME}]</key>
+                            <delay>0</delay>
+                            <history>30d</history>
+                            <value_type>FLOAT</value_type>
+                            <units>iops</units>
+                            <preprocessing>
+                                <step>
+                                    <type>JSONPATH</type>
+                                    <parameters>
+                                        <parameter>$[3]</parameter>
+                                    </parameters>
+                                </step>
+                                <step>
+                                    <type>CHANGE_PER_SECOND</type>
+                                    <parameters>
+                                        <parameter/>
+                                    </parameters>
+                                </step>
+                            </preprocessing>
+                            <master_item>
+                                <key>zfs.zpool.iostat[{#POOLNAME}]</key>
+                            </master_item>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS zpool</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>7142e6f1eceb4dc29e3a03d494230564</uuid>
+                            <name>Zpool {#POOLNAME}: Get iostats</name>
+                            <key>zfs.zpool.iostat[{#POOLNAME}]</key>
+                            <history>0</history>
+                            <trends>0</trends>
+                            <value_type>TEXT</value_type>
+                            <preprocessing>
+                                <step>
+                                    <type>REGEX</type>
+                                    <parameters>
+                                        <parameter>([0-9]+)\s+([0-9]+)\s+([0-9]+)\s+([0-9]+)\s+([0-9]+).*$</parameter>
+                                        <parameter>[&quot;\1&quot;, &quot;\2&quot;, &quot;\3&quot;, &quot;\4&quot;]</parameter>
+                                    </parameters>
+                                </step>
+                            </preprocessing>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS zpool</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>867075d6eb1743069be868007472192b</uuid>
+                            <name>Zpool {#POOLNAME} scrub status</name>
+                            <key>zfs.zpool.scrub[{#POOLNAME}]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <description>Detect if the pool is currently scrubbing itself.
+
+This is not a bad thing itself, but it slows down the entire pool and should be terminated when on production server during business hours if it causes a noticeable slowdown.</description>
+                            <valuemap>
+                                <name>ZFS zpool scrub status</name>
+                            </valuemap>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS zpool</value>
+                                </tag>
+                            </tags>
+                            <trigger_prototypes>
+                                <trigger_prototype>
+                                    <uuid>792be07c555c4ae6a9819d69d332357b</uuid>
+                                    <expression>max(/ZFS on FreeBSD/zfs.zpool.scrub[{#POOLNAME}],12h)=0</expression>
+                                    <name>Zpool {#POOLNAME} is scrubbing for more than 12h on {HOST.NAME}</name>
+                                    <priority>AVERAGE</priority>
+                                    <dependencies>
+                                        <dependency>
+                                            <name>Zpool {#POOLNAME} is scrubbing for more than 24h on {HOST.NAME}</name>
+                                            <expression>max(/ZFS on FreeBSD/zfs.zpool.scrub[{#POOLNAME}],24h)=0</expression>
+                                        </dependency>
+                                    </dependencies>
+                                </trigger_prototype>
+                                <trigger_prototype>
+                                    <uuid>04cac9633f164227b1f9b2fe26923609</uuid>
+                                    <expression>max(/ZFS on FreeBSD/zfs.zpool.scrub[{#POOLNAME}],24h)=0</expression>
+                                    <name>Zpool {#POOLNAME} is scrubbing for more than 24h on {HOST.NAME}</name>
+                                    <priority>HIGH</priority>
+                                </trigger_prototype>
+                            </trigger_prototypes>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <uuid>82fce07b30114c7e8645689317e2c1b4</uuid>
+                            <expression>( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},available]) + last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) ) ) &gt; ({$ZPOOL_AVERAGE_ALERT}/100)</expression>
+                            <name>More than {$ZPOOL_AVERAGE_ALERT}% used on zpool {#POOLNAME} on {HOST.NAME}</name>
+                            <priority>AVERAGE</priority>
+                            <dependencies>
+                                <dependency>
+                                    <name>More than {$ZPOOL_HIGH_ALERT}% used on zpool {#POOLNAME} on {HOST.NAME}</name>
+                                    <expression>( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},available]) + last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) ) ) &gt; ({$ZPOOL_HIGH_ALERT}/100)</expression>
+                                </dependency>
+                            </dependencies>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <uuid>ab56a2a8eb3d4b4294707e2a8aa94e22</uuid>
+                            <expression>( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},available]) + last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) ) ) &gt; ({$ZPOOL_DISASTER_ALERT}/100)</expression>
+                            <name>More than {$ZPOOL_DISASTER_ALERT}% used on zpool {#POOLNAME} on {HOST.NAME}</name>
+                            <priority>DISASTER</priority>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <uuid>c9c22e6617af4ad09970d2988c4a7fe7</uuid>
+                            <expression>( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},available]) + last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) ) ) &gt; ({$ZPOOL_HIGH_ALERT}/100)</expression>
+                            <name>More than {$ZPOOL_HIGH_ALERT}% used on zpool {#POOLNAME} on {HOST.NAME}</name>
+                            <priority>HIGH</priority>
+                            <dependencies>
+                                <dependency>
+                                    <name>More than {$ZPOOL_DISASTER_ALERT}% used on zpool {#POOLNAME} on {HOST.NAME}</name>
+                                    <expression>( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) / ( last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},available]) + last(/ZFS on FreeBSD/zfs.get.poolinfo[{#POOLNAME},used]) ) ) &gt; ({$ZPOOL_DISASTER_ALERT}/100)</expression>
+                                </dependency>
+                            </dependencies>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes>
+                        <graph_prototype>
+                            <uuid>926abae3e18144f0899711fdfd16e808</uuid>
+                            <name>ZFS zpool {#POOLNAME} IOPS</name>
+                            <ymin_type_1>FIXED</ymin_type_1>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <color>5C6BC0</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.zpool.iostat.reads[{#POOLNAME}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>2</sortorder>
+                                    <color>EF5350</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.zpool.iostat.writes[{#POOLNAME}]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                        <graph_prototype>
+                            <uuid>63ae2d7acd4d4d15b4c5e7a5a90a063a</uuid>
+                            <name>ZFS zpool {#POOLNAME} space usage</name>
+                            <type>STACKED</type>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <color>00EE00</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.get.poolinfo[{#POOLNAME},available]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>2</sortorder>
+                                    <color>EE0000</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.get.poolinfo[{#POOLNAME},used]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                        <graph_prototype>
+                            <uuid>aa35d164bacd45c5983fd2856781da88</uuid>
+                            <name>ZFS zpool {#POOLNAME} throughput</name>
+                            <ymin_type_1>FIXED</ymin_type_1>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <color>5C6BC0</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.zpool.iostat.nread[{#POOLNAME}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>2</sortorder>
+                                    <drawtype>BOLD_LINE</drawtype>
+                                    <color>EF5350</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.zpool.iostat.nwritten[{#POOLNAME}]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                    </graph_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>6c96e092f08f4b98af9a377782180689</uuid>
+                    <name>Zfs vdev discovery</name>
+                    <key>zfs.vdev.discovery</key>
+                    <delay>1h</delay>
+                    <lifetime>3d</lifetime>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>9f63161726774a28905c87aac92cf1e9</uuid>
+                            <name>vdev {#VDEV}: CHECKSUM error counter</name>
+                            <key>zfs.vdev.error_counter.cksum[{#VDEV}]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.
+
+If yes, use 'zpool replace' to replace the device.
+
+If not, clear the error with 'zpool clear'.</description>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS vdev</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>48a02eb060fd4b73bdde08a2795c4717</uuid>
+                            <name>vdev {#VDEV}: READ error counter</name>
+                            <key>zfs.vdev.error_counter.read[{#VDEV}]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.
+
+If yes, use 'zpool replace' to replace the device.
+
+If not, clear the error with 'zpool clear'.</description>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS vdev</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>15953ba38fde4b8c8681955a27d9204a</uuid>
+                            <name>vdev {#VDEV}: WRITE error counter</name>
+                            <key>zfs.vdev.error_counter.write[{#VDEV}]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.
+
+If yes, use 'zpool replace' to replace the device.
+
+If not, clear the error with 'zpool clear'.</description>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS vdev</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>3e64a59d2a154a89a3bc43483942302d</uuid>
+                            <name>vdev {#VDEV}: total number of errors</name>
+                            <type>CALCULATED</type>
+                            <key>zfs.vdev.error_total[{#VDEV}]</key>
+                            <delay>5m</delay>
+                            <history>30d</history>
+                            <params>last(//zfs.vdev.error_counter.cksum[{#VDEV}])+last(//zfs.vdev.error_counter.read[{#VDEV}])+last(//zfs.vdev.error_counter.write[{#VDEV}])</params>
+                            <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.
+
+If yes, use 'zpool replace' to replace the device.
+
+If not, clear the error with 'zpool clear'.</description>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS</value>
+                                </tag>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>ZFS vdev</value>
+                                </tag>
+                            </tags>
+                            <trigger_prototypes>
+                                <trigger_prototype>
+                                    <uuid>44f7667c275d4a04891bc4f1d00e668b</uuid>
+                                    <expression>last(/ZFS on FreeBSD/zfs.vdev.error_total[{#VDEV}])&gt;0</expression>
+                                    <name>vdev {#VDEV} has encountered {ITEM.VALUE} errors on {HOST.NAME}</name>
+                                    <priority>HIGH</priority>
+                                    <description>This device has experienced an unrecoverable error. Determine if the device needs to be replaced.
+
+If yes, use 'zpool replace' to replace the device.
+
+If not, clear the error with 'zpool clear'.
+
+You may also run a zpool scrub to check if some other undetected errors are present on this vdev.</description>
+                                </trigger_prototype>
+                            </trigger_prototypes>
+                        </item_prototype>
+                    </item_prototypes>
+                    <graph_prototypes>
+                        <graph_prototype>
+                            <uuid>ab78dba991ba4311a04740fc69b30381</uuid>
+                            <name>ZFS vdev {#VDEV} errors</name>
+                            <ymin_type_1>FIXED</ymin_type_1>
+                            <graph_items>
+                                <graph_item>
+                                    <color>CC00CC</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.vdev.error_counter.cksum[{#VDEV}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>1</sortorder>
+                                    <color>F63100</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.vdev.error_counter.read[{#VDEV}]</key>
+                                    </item>
+                                </graph_item>
+                                <graph_item>
+                                    <sortorder>2</sortorder>
+                                    <color>BBBB00</color>
+                                    <item>
+                                        <host>ZFS on FreeBSD</host>
+                                        <key>zfs.vdev.error_counter.write[{#VDEV}]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                    </graph_prototypes>
+                </discovery_rule>
+            </discovery_rules>
+            <macros>
+                <macro>
+                    <macro>{$ZFS_ARC_META_ALERT}</macro>
+                    <value>90</value>
+                </macro>
+                <macro>
+                    <macro>{$ZFS_AVERAGE_ALERT}</macro>
+                    <value>90</value>
+                </macro>
+                <macro>
+                    <macro>{$ZFS_DISASTER_ALERT}</macro>
+                    <value>99</value>
+                </macro>
+                <macro>
+                    <macro>{$ZFS_HIGH_ALERT}</macro>
+                    <value>95</value>
+                </macro>
+                <macro>
+                    <macro>{$ZPOOL_AVERAGE_ALERT}</macro>
+                    <value>85</value>
+                </macro>
+                <macro>
+                    <macro>{$ZPOOL_DISASTER_ALERT}</macro>
+                    <value>99</value>
+                </macro>
+                <macro>
+                    <macro>{$ZPOOL_HIGH_ALERT}</macro>
+                    <value>90</value>
+                </macro>
+            </macros>
+            <dashboards>
+                <dashboard>
+                    <uuid>180e8c0dc05946e4b8552e3a01df347f</uuid>
+                    <name>ZFS ARC</name>
+                    <pages>
+                        <page>
+                            <widgets>
+                                <widget>
+                                    <type>GRAPH_CLASSIC</type>
+                                    <width>24</width>
+                                    <height>5</height>
+                                    <fields>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>source_type</name>
+                                            <value>0</value>
+                                        </field>
+                                        <field>
+                                            <type>GRAPH</type>
+                                            <name>graphid</name>
+                                            <value>
+                                                <name>ZFS ARC memory usage</name>
+                                                <host>ZFS on FreeBSD</host>
+                                            </value>
+                                        </field>
+                                    </fields>
+                                </widget>
+                                <widget>
+                                    <type>GRAPH_CLASSIC</type>
+                                    <y>5</y>
+                                    <width>24</width>
+                                    <height>5</height>
+                                    <fields>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>source_type</name>
+                                            <value>0</value>
+                                        </field>
+                                        <field>
+                                            <type>GRAPH</type>
+                                            <name>graphid</name>
+                                            <value>
+                                                <name>ZFS ARC Cache Hit Ratio</name>
+                                                <host>ZFS on FreeBSD</host>
+                                            </value>
+                                        </field>
+                                    </fields>
+                                </widget>
+                                <widget>
+                                    <type>GRAPH_CLASSIC</type>
+                                    <y>10</y>
+                                    <width>24</width>
+                                    <height>5</height>
+                                    <fields>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>source_type</name>
+                                            <value>0</value>
+                                        </field>
+                                        <field>
+                                            <type>GRAPH</type>
+                                            <name>graphid</name>
+                                            <value>
+                                                <name>ZFS ARC breakdown</name>
+                                                <host>ZFS on FreeBSD</host>
+                                            </value>
+                                        </field>
+                                    </fields>
+                                </widget>
+                                <widget>
+                                    <type>GRAPH_CLASSIC</type>
+                                    <y>15</y>
+                                    <width>24</width>
+                                    <height>5</height>
+                                    <fields>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>source_type</name>
+                                            <value>0</value>
+                                        </field>
+                                        <field>
+                                            <type>GRAPH</type>
+                                            <name>graphid</name>
+                                            <value>
+                                                <name>ZFS ARC arc_meta_used breakdown</name>
+                                                <host>ZFS on FreeBSD</host>
+                                            </value>
+                                        </field>
+                                    </fields>
+                                </widget>
+                            </widgets>
+                        </page>
+                    </pages>
+                </dashboard>
+                <dashboard>
+                    <uuid>442dda5c36c04fc78c3a73eacf26bc7f</uuid>
+                    <name>ZFS zpools</name>
+                    <pages>
+                        <page>
+                            <widgets>
+                                <widget>
+                                    <type>GRAPH_PROTOTYPE</type>
+                                    <width>8</width>
+                                    <height>5</height>
+                                    <fields>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>source_type</name>
+                                            <value>2</value>
+                                        </field>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>columns</name>
+                                            <value>1</value>
+                                        </field>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>rows</name>
+                                            <value>1</value>
+                                        </field>
+                                        <field>
+                                            <type>GRAPH_PROTOTYPE</type>
+                                            <name>graphid</name>
+                                            <value>
+                                                <name>ZFS zpool {#POOLNAME} IOPS</name>
+                                                <host>ZFS on FreeBSD</host>
+                                            </value>
+                                        </field>
+                                    </fields>
+                                </widget>
+                                <widget>
+                                    <type>GRAPH_PROTOTYPE</type>
+                                    <x>8</x>
+                                    <width>8</width>
+                                    <height>5</height>
+                                    <fields>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>source_type</name>
+                                            <value>2</value>
+                                        </field>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>columns</name>
+                                            <value>1</value>
+                                        </field>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>rows</name>
+                                            <value>1</value>
+                                        </field>
+                                        <field>
+                                            <type>GRAPH_PROTOTYPE</type>
+                                            <name>graphid</name>
+                                            <value>
+                                                <name>ZFS zpool {#POOLNAME} throughput</name>
+                                                <host>ZFS on FreeBSD</host>
+                                            </value>
+                                        </field>
+                                    </fields>
+                                </widget>
+                                <widget>
+                                    <type>GRAPH_PROTOTYPE</type>
+                                    <x>16</x>
+                                    <width>8</width>
+                                    <height>5</height>
+                                    <fields>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>source_type</name>
+                                            <value>2</value>
+                                        </field>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>columns</name>
+                                            <value>1</value>
+                                        </field>
+                                        <field>
+                                            <type>INTEGER</type>
+                                            <name>rows</name>
+                                            <value>1</value>
+                                        </field>
+                                        <field>
+                                            <type>GRAPH_PROTOTYPE</type>
+                                            <name>graphid</name>
+                                            <value>
+                                                <name>ZFS zpool {#POOLNAME} space usage</name>
+                                                <host>ZFS on FreeBSD</host>
+                                            </value>
+                                        </field>
+                                    </fields>
+                                </widget>
+                            </widgets>
+                        </page>
+                    </pages>
+                </dashboard>
+            </dashboards>
+            <valuemaps>
+                <valuemap>
+                    <uuid>d1d7b0898d06481dbcec8b02d915fb1c</uuid>
+                    <name>ZFS zpool scrub status</name>
+                    <mappings>
+                        <mapping>
+                            <value>0</value>
+                            <newvalue>Scrub in progress</newvalue>
+                        </mapping>
+                        <mapping>
+                            <value>1</value>
+                            <newvalue>No scrub in progress</newvalue>
+                        </mapping>
+                    </mappings>
+                </valuemap>
+            </valuemaps>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <uuid>1daac44b853b4b6da767c9c3af96b774</uuid>
+            <expression>last(/ZFS on FreeBSD/zfs.arcstats[dnode_size])&gt;(last(/ZFS on FreeBSD/zfs.arcstats[arc_dnode_limit])*0.9)</expression>
+            <name>ZFS ARC dnode size &gt; 90% dnode max size on {HOST.NAME}</name>
+            <priority>HIGH</priority>
+        </trigger>
+        <trigger>
+            <uuid>69c18b7ceb3d4da2bda0e05f9a12453f</uuid>
+            <expression>last(/ZFS on FreeBSD/zfs.arcstats[arc_meta_used])&gt;(last(/ZFS on FreeBSD/zfs.arcstats[arc_meta_limit])*0.01*{$ZFS_ARC_META_ALERT})</expression>
+            <name>ZFS ARC meta size &gt; {$ZFS_ARC_META_ALERT}% meta max size on {HOST.NAME}</name>
+            <priority>HIGH</priority>
+        </trigger>
+    </triggers>
+    <graphs>
+        <graph>
+            <uuid>1510111dc5414e6d80a5230ce6a81f1d</uuid>
+            <name>ZFS ARC arc_meta_used breakdown</name>
+            <type>STACKED</type>
+            <ymin_type_1>FIXED</ymin_type_1>
+            <graph_items>
+                <graph_item>
+                    <color>3333FF</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[metadata_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>00EE00</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[dnode_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>EE0000</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[hdr_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>EEEE00</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[dbuf_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>EE00EE</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[bonus_size]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <uuid>203eeeaadc9444ccbbc31cf043e836cb</uuid>
+            <name>ZFS ARC breakdown</name>
+            <type>STACKED</type>
+            <ymin_type_1>FIXED</ymin_type_1>
+            <graph_items>
+                <graph_item>
+                    <color>3333FF</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[data_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>00AA00</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[metadata_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>EE0000</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[dnode_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>CCCC00</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[hdr_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>A54F10</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[dbuf_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>888888</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[bonus_size]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <uuid>4c493303be4a45a7a96d3ef7246843c0</uuid>
+            <name>ZFS ARC Cache Hit Ratio</name>
+            <ymin_type_1>FIXED</ymin_type_1>
+            <ymax_type_1>FIXED</ymax_type_1>
+            <graph_items>
+                <graph_item>
+                    <color>00CC00</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats_hit_ratio</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <uuid>b2fce9515a7d4218a5e9015f212c2a60</uuid>
+            <name>ZFS ARC memory usage</name>
+            <ymin_type_1>FIXED</ymin_type_1>
+            <ymax_type_1>ITEM</ymax_type_1>
+            <ymax_item_1>
+                <host>ZFS on FreeBSD</host>
+                <key>zfs.arcstats[c_max]</key>
+            </ymax_item_1>
+            <graph_items>
+                <graph_item>
+                    <drawtype>GRADIENT_LINE</drawtype>
+                    <color>0000EE</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <drawtype>BOLD_LINE</drawtype>
+                    <color>DD0000</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[c_max]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>00BB00</color>
+                    <item>
+                        <host>ZFS on FreeBSD</host>
+                        <key>zfs.arcstats[c_min]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>
