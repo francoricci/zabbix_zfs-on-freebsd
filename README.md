@@ -1,6 +1,6 @@
 # Monitor ZFS on FreeBSD on Zabbix
 
-This template is a fork of the project published to: https://github.com/Cosium/zabbix_zfs-on-linux
+This template is a fork of the project published by Cosium (https://github.com/Cosium) at: https://github.com/Cosium/zabbix_zfs-on-linux
 
 Template has the same feauteres of "zabbix_zfs-on-linux" but it works on FreeBSD.
 
@@ -8,11 +8,13 @@ Template has the same feauteres of "zabbix_zfs-on-linux" but it works on FreeBSD
 FreeBSD 13 or later should works, tested on FreeBSD 13
 
 # Installation on Zabbix server
+This template was tested on Zabbix 5.4.
 
 ## Import the template
 Import the template that is in the "template" directory of this repository
 
 # Installation on the server you want to monitor
+
 ## Prerequisites
 The server needs to have some very basic tools to run the user parameters:
 - awk
