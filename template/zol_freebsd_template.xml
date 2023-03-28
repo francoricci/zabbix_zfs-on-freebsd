@@ -24,7 +24,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
             <items>
                 <item>
                     <uuid>6b5fc935fe194d30badea64eaf3f317f</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;arc_dnode_limit&quot;</name>
                     <key>zfs.arcstats[arc_dnode_limit]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -41,7 +41,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>0b7d673688e3429d92aa349762729f83</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;arc_meta_limit&quot;</name>
                     <key>zfs.arcstats[arc_meta_limit]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -58,7 +58,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>b0b5004458494182bf874545f8eb4e41</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;arc_meta_used&quot;</name>
                     <key>zfs.arcstats[arc_meta_used]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -76,7 +76,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>795ab079ba13461c872ee1d5c0295704</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;bonus_size&quot;</name>
                     <key>zfs.arcstats[bonus_size]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -127,7 +127,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>5e12dd98f1644f5a87cc5ded5d2e55d8</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;data_size&quot;</name>
                     <key>zfs.arcstats[data_size]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -144,7 +144,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>522a0f33c90047bab4f55b7214f51dea</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;dbuf_size&quot;</name>
                     <key>zfs.arcstats[dbuf_size]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -161,7 +161,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>a3d10ebb57984a829f780a229fc9617c</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;dnode_size&quot;</name>
                     <key>zfs.arcstats[dnode_size]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -178,7 +178,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>184eef57aa034cf8acaf6a8f0e02395b</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;hdr_size&quot;</name>
                     <key>zfs.arcstats[hdr_size]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -195,7 +195,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>cb7bcc02dfc14329a361e194145871c0</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;hits&quot;</name>
                     <key>zfs.arcstats[hits]</key>
                     <history>30d</history>
                     <preprocessing>
@@ -219,7 +219,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>8df273b6e0904c9ab140f8f13f6ca973</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;metadata_size&quot;</name>
                     <key>zfs.arcstats[metadata_size]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -236,7 +236,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>dcd96743ed984018bff5d16105693606</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;mfu_hits&quot;</name>
                     <key>zfs.arcstats[mfu_hits]</key>
                     <history>30d</history>
                     <preprocessing>
@@ -260,7 +260,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>1015ebe8ef6f4626ae7967bf6358f1b3</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;mfu_size&quot;</name>
                     <key>zfs.arcstats[mfu_size]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -277,7 +277,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>1298a265a6784e63a166b768e1faf67e</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;misses&quot;</name>
                     <key>zfs.arcstats[misses]</key>
                     <history>30d</history>
                     <preprocessing>
@@ -301,7 +301,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>c85d0e9e1b464748a20148e2f2507609</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;mru_hits&quot;</name>
                     <key>zfs.arcstats[mru_hits]</key>
                     <history>30d</history>
                     <preprocessing>
@@ -325,7 +325,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>50954c7b43d745d09990011df4d7448c</uuid>
-                    <name>ZFS ARC stat &quot;$1&quot;</name>
+                    <name>ZFS ARC stat &quot;mru_size&quot;</name>
                     <key>zfs.arcstats[mru_size]</key>
                     <history>30d</history>
                     <units>B</units>
@@ -398,7 +398,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>ebfb742fb123451c9632d12bde0957c4</uuid>
-                    <name>ZFS parameter $1</name>
+                    <name>ZFS parameter dnode_limit_percent</name>
                     <key>zfs.get.param[dnode_limit_percent]</key>
                     <delay>1h</delay>
                     <history>30d</history>
@@ -416,7 +416,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                 </item>
                 <item>
                     <uuid>18d8b817852848929f4e0b421cb21532</uuid>
-                    <name>ZFS parameter $1</name>
+                    <name>ZFS parameter meta_limit_percent</name>
                     <key>zfs.get.param[meta_limit_percent]</key>
                     <delay>1h</delay>
                     <history>30d</history>
@@ -470,7 +470,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                     <item_prototypes>
                         <item_prototype>
                             <uuid>4d7c96bd10b44754b2c8790b90c12046</uuid>
-                            <name>Zfs dataset $1 compressratio</name>
+                            <name>Zfs dataset {#FILESETNAME} compressratio</name>
                             <key>zfs.get.compressratio[{#FILESETNAME}]</key>
                             <delay>30m</delay>
                             <history>30d</history>
@@ -497,7 +497,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                         </item_prototype>
                         <item_prototype>
                             <uuid>e9df401ae71e45c8a3fdbbd146cdd57b</uuid>
-                            <name>Zfs dataset $1 $2</name>
+                            <name>Zfs dataset {#FILESETNAME} available</name>
                             <key>zfs.get.fsinfo[{#FILESETNAME},available]</key>
                             <delay>5m</delay>
                             <history>30d</history>
@@ -515,7 +515,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                         </item_prototype>
                         <item_prototype>
                             <uuid>ed63bb6942364281bcea80c54b6f8fcc</uuid>
-                            <name>Zfs dataset $1 $2</name>
+                            <name>Zfs dataset {#FILESETNAME} referenced</name>
                             <key>zfs.get.fsinfo[{#FILESETNAME},referenced]</key>
                             <delay>5m</delay>
                             <history>30d</history>
@@ -533,7 +533,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                         </item_prototype>
                         <item_prototype>
                             <uuid>7ef4530ddf464defb2a64ce674a82c8c</uuid>
-                            <name>Zfs dataset $1 $2</name>
+                            <name>Zfs dataset {#FILESETNAME} usedbychildren</name>
                             <key>zfs.get.fsinfo[{#FILESETNAME},usedbychildren]</key>
                             <delay>5m</delay>
                             <history>30d</history>
@@ -551,7 +551,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                         </item_prototype>
                         <item_prototype>
                             <uuid>3c7f982147be49629c78aa67a1d8d56e</uuid>
-                            <name>Zfs dataset $1 $2</name>
+                            <name>Zfs dataset {#FILESETNAME} usedbydataset</name>
                             <key>zfs.get.fsinfo[{#FILESETNAME},usedbydataset]</key>
                             <delay>1h</delay>
                             <history>30d</history>
@@ -569,7 +569,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                         </item_prototype>
                         <item_prototype>
                             <uuid>cc0e02c58b28443eb78eeacc81095966</uuid>
-                            <name>Zfs dataset $1 $2</name>
+                            <name>Zfs dataset {#FILESETNAME} usedbysnapshots</name>
                             <key>zfs.get.fsinfo[{#FILESETNAME},usedbysnapshots]</key>
                             <delay>5m</delay>
                             <history>30d</history>
@@ -587,7 +587,7 @@ Fork of the project: https://github.com/Cosium/zabbix_zfs-on-linux</description>
                         </item_prototype>
                         <item_prototype>
                             <uuid>a54feffafdb34ba08f1474ab4710088d</uuid>
-                            <name>Zfs dataset $1 $2</name>
+                            <name>Zfs dataset {#FILESETNAME} used</name>
                             <key>zfs.get.fsinfo[{#FILESETNAME},used]</key>
                             <delay>5m</delay>
                             <history>30d</history>
